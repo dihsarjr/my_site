@@ -1,12 +1,69 @@
 {% extends 'base.html' %} 
+{% load static %}
+
 
 {% block title %}
 My blog
 {% endblock %}
 
 
+{% block css_files%}
+<link rel="stylesheet" href="{% static "blog/index.css" %}"/>
+{%endblock%}
+
 {% block content %}
-<h1>
-    welcome to my blog
-</h1>
+<header id="main-navigation">
+    <h1>
+        <a href = "">Rashid' Blog</a>
+    </h1>
+    <nav>
+ 
+            <a href = "">All Posts</a>
+       
+    </nav>
+</header>
+
+<section id="welcome">
+<header>
+    <img src="" alt="Rashid - The Author Of The Blog"/>
+    <h2>
+       Rashid's Blog 
+    </h2>
+    
+</header>
+<p>Hi, I am Rashid and i love blog about tech and the world! </p>
+</section>
+
+<section id="latest-posts">
+    <h2>My latest Thoughts
+    </h2>
+<ul><li>
+    <article class="post">
+        <a href="">
+            <img src="" alt="Mountain Hiking"/>
+            <div class="post__contants">
+                <h3>
+                    Mountain Hiking
+                </h3>
+                <p>Hi, I am Rashid and i love blog about tech and the world! </p>
+
+            </div>
+        </a>
+    </article>
+</li></ul>
+
+
+</section>
+<section id="about">
+    <h2>
+        What i do.
+    </h2>
+    <p>
+        this nothing but this only for now 
+    </p>
+    <p>
+        this nothing but this only for now 
+    </p>
+</section>
+
 {% endblock  %}
